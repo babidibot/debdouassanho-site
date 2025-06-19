@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Deb Douassanho - Artiste Afro Beat ivoirien engagé. Clips, musique, réseaux sociaux et contact." />
+  <meta property="og:title" content="Deb Douassanho - Artiste Afro Beat" />
+  <meta property="og:description" content="Plongez dans l'univers vibrant et engagé de Deb Douassanho, artiste Afro Beat ivoirien." />
+  <meta property="og:image" content="cover.jpg" />
+  <meta property="og:type" content="website" />
+  <title>Deb Douassanho - Afro Beat Ivoirien</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: #0d0d0d;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('cover.jpg') center/cover no-repeat;
+      color: white;
+      text-shadow: 0 0 20px black;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeInUp 1s ease-out forwards 0.3s;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5em;
+      opacity: 0.9;
+      max-width: 600px;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.8);
+      padding: 10px;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e94560;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .about img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 20px;
+      margin: 20px auto;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+    }
+    .about p {
+      font-size: 1.2em;
+      margin-top: 20px;
+      line-height: 1.8;
+    }
+    iframe {
+      width: 90%;
+      max-width: 720px;
+      height: 400px;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    }
+    .whatsapp-button, .social a {
+      display: inline-block;
+      margin: 15px;
+      padding: 12px 30px;
+      background: #e94560;
+      color: white;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .whatsapp-button:hover, .social a:hover {
+      background: #c12f4c;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+    form input, form textarea {
+      width: 90%;
+      max-width: 500px;
+      padding: 15px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    form button {
+      padding: 12px 30px;
+      background: #1a1a2e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    form button:hover {
+      background: #e94560;
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deb Douassanho</h1>
+    <p>Vivez l'expérience Afro Beat autrement. Authentique. Engagé. Vibrant.</p>
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#video">Clip</a>
+    <a href="#listen">Écouter</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" class="about">
+      <h2>Qui est Deb ?</h2>
+      <img src="IMG-20250619-WA0245.jpg" alt="Portrait de Deb Douassanho">
+      <p>Deb Douassanho est une voix montante de l'Afro Beat ivoirien. Inspiré par la nature, le quotidien et les luttes de son peuple, il transforme chaque note en message, chaque rythme en vibration d'espoir. Son art est une invitation à ressentir, danser, réfléchir.</p>
+    </section>
+
+    <section id="video">
+      <h2>🎬 Dernier Clip</h2>
+      <p><a href="https://www.youtube.com/@debdouassanho/videos" target="_blank" style="color: #e94560; font-size: 1.3em; text-decoration: underline; font-weight: bold;">📺 Cliquez ici pour voir le dernier clip de Deb</a></p>
+    </section>
+
+    <section id="listen">
+  <h2>🎧 Écoutez Deb</h2>
+  <p><a href="https://open.spotify.com/artist/1rAv1XzvFry8Zy6mTM7JgE" target="_blank" style="color: #e94560; font-size: 1.3em; text-decoration: underline; font-weight: bold;">🎵 Cliquez ici pour écouter Deb sur Spotify</a></p>
+</section>
+
+    <section id="contact">
+      <h2>📩 Contact & Booking</h2>
+      <p><a href="tel:+2250798741722">📞 +225 07 98 74 17 22</a></p>
+      <p><a href="mailto:Eridjama69@gmail.com">📧 Eridjama69@gmail.com</a></p>
+      <a class="whatsapp-button" href="https://wa.me/2250798741722" target="_blank" rel="noopener">💬 Écrire sur WhatsApp</a>
+      <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea rows="5" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+
+    <section class="newsletter">
+      <h2>📰 Abonnez-vous à la newsletter</h2>
+      <p>Recevez les dernières actus, clips, dates et exclusivités de Deb.</p>
+      <form>
+        <input type="email" placeholder="Votre email" required>
+        <button type="submit">S'abonner</button>
+      </form>
+    </section>
+
+    <section class="social">
+      <h2>🔗 Suivez Deb</h2>
+      <a href="https://www.facebook.com/share/19GffTtBYW/" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/deb_douassanho" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@debdouassanho" target="_blank">YouTube</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Deb Douassanho | Site conçu par LocalUp</p>
+  </footer>
+
+  <script>
+    // Scroll animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
