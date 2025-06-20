@@ -79,15 +79,12 @@
     .carousel {
       position: relative;
       height: 400px;
-      perspective: 1200px;
       overflow: hidden;
       margin-bottom: 30px;
     }
     .carousel-track {
       display: flex;
       transition: transform 0.6s ease;
-      transform-style: preserve-3d;
-      height: 100%;
     }
     .carousel-track img {
       flex-shrink: 0;
@@ -96,11 +93,6 @@
       max-width: 100%;
       border-radius: 20px;
       margin: 0 10px;
-      transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-    .carousel-track img:not(:nth-child(2)) {
-      opacity: 0.4;
-      transform: scale(0.8);
     }
     .carousel-buttons {
       position: absolute;
@@ -121,39 +113,18 @@
       pointer-events: auto;
       border-radius: 50%;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 30px;
-    }
-    input, textarea {
-      width: 90%;
-      max-width: 500px;
-      padding: 15px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-    }
-    button, .btn-link, .whatsapp-button, .social a {
-      display: inline-block;
-      background: #ff4d6d;
-      color: white;
-      padding: 12px 30px;
-      margin: 10px;
-      border: none;
-      border-radius: 40px;
-      font-weight: bold;
-      text-decoration: none;
-      cursor: pointer;
-    }
     .btn-link {
       background: #444;
       color: #fff;
+      padding: 12px 30px;
       margin: 10px auto;
-      display: block;
-      width: fit-content;
+      border-radius: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-link:hover {
+      background: #666;
     }
     .whatsapp-button {
       background: #25D366;
@@ -161,12 +132,11 @@
       bottom: 20px;
       right: 20px;
       z-index: 999;
-    }
-    .whatsapp-button:hover {
-      background: #1ebe5d;
-    }
-    button:hover, .btn-link:hover, .social a:hover {
-      background: #c12f4c;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 1.5em;
+      color: white;
+      text-decoration: none;
     }
     footer {
       background: #111;
@@ -217,33 +187,36 @@
           <button class="carousel-button" onclick="moveSlide(1)">&#10095;</button>
         </div>
       </div>
-      <p>Deb Douassanho, de son vrai nom Djama Djro Eric Blaisdel, est un artiste ivoirien passionné dont les compositions puisent leur force dans la nature, les expériences personnelles et la profondeur de l’âme humaine. À travers l'Afro Beat, il exprime une musique vibrante et engagée, à la croisée du rythme et de la réflexion. Porté par une énergie créative rare, Deb mêle dans ses chansons des sons entraînants et des messages puissants. Chaque morceau est une invitation à voir le monde autrement, à ressentir, à s’émouvoir, à danser. À la fois auteur, compositeur et interprète, il incarne une nouvelle génération d’artistes africains qui bâtissent des ponts entre tradition et modernité. Son authenticité, son vécu et sa connexion avec la nature font de lui un artiste unique, capable de toucher des cœurs au-delà des frontières. Écouter Deb, c’est s’embarquer dans une aventure musicale profondément humaine.</p>
+      <p>Deb Douassanho, de son vrai nom Djama Djro Eric Blaisdel, est un artiste ivoirien passionné dont les compositions puisent leur force dans la nature, les expériences personnelles et la profondeur de l’âme humaine. À travers l'Afro Beat, il exprime une musique vibrante et engagée, à la croisée du rythme et de la réflexion. Porté par une énergie créative rare, Deb mêle dans ses chansons des sons entraînants et des messages puissants. Chaque morceau est une invitation à voir le monde autrement, à ressentir, à s’émouvoir, à danser. À la fois auteur, compositeur et interprète, il incarne une nouvelle génération d’artistes africains qui bâtissent des ponts entre tradition et modernité.</p>
     </section>
 
     <section id="video">
       <h2>🎧 Écoutez Deb</h2>
-      <a class="btn-link" href="https://www.youtube.com/watch?v=KgO_VQer-4o" target="_blank">▶️ Dernier clip</a>
-      <a class="btn-link" href="https://www.youtube.com/watch?v=TqmbLgaGKbA" target="_blank">🎬 Premier clip</a>
+      <a class="btn-link" href="https://youtube.com/@debdouassanho?si=JbZidrC9CKzPbXoQ" target="_blank">▶️ Dernier clip</a>
+      <a class="btn-link" href="https://youtube.com/@debdouassanho?si=JbZidrC9CKzPbXoQ" target="_blank">🎬 Premier clip</a>
     </section>
 
     <section id="contact">
-      <h2>📩 Contact & Booking</h2>
-      <p><a href="tel:+2250798741722">📞 +225 07 98 74 17 22</a></p>
-      <p><a href="mailto:Eridjama69@gmail.com">📧 Eridjama69@gmail.com</a></p>
-      <form onsubmit="event.preventDefault(); alert('Merci pour votre message !'); this.reset();">
-        <input type="text" placeholder="Votre nom" required />
-        <input type="email" placeholder="Votre email" required />
-        <textarea rows="5" placeholder="Votre message..." required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </section>
+  <h2>📩 Contact & Booking</h2>
+  <p><a href="tel:+2250798741722">📞 +225 07 98 74 17 22</a></p>
+  <p><a href="mailto:Eridjama69@gmail.com">📧 Eridjama69@gmail.com</a></p>
+  <form onsubmit="event.preventDefault(); alert('Merci pour votre message !'); this.reset();" style="max-width: 500px; margin: 30px auto; display: flex; flex-direction: column; gap: 15px;">
+    <input type="text" placeholder="Votre nom" required style="padding: 15px; border-radius: 8px; border: none; font-size: 1em;" />
+    <input type="email" placeholder="Votre email" required style="padding: 15px; border-radius: 8px; border: none; font-size: 1em;" />
+    <textarea rows="5" placeholder="Votre message..." required style="padding: 15px; border-radius: 8px; border: none; font-size: 1em;"></textarea>
+    <button type="submit" style="background: #e94560; color: white; padding: 12px 30px; border: none; border-radius: 40px; font-weight: bold; cursor: pointer;">Envoyer</button>
+  </form>
+</section>
 
-    <section class="social">
-      <h2>🔗 Suivez Deb</h2>
-      <a href="https://www.facebook.com/share/19GffTtBYW/" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/deb_douassanho" target="_blank">Instagram</a>
-      <a href="https://youtube.com/@debdouassanho" target="_blank">YouTube</a>
-    </section>
+<section class="social">
+  <h2>🔗 Suivez Deb</h2>
+  <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
+    <a href="https://www.facebook.com/share/19GffTtBYW/" target="_blank" style="background: #3b5998; color: white; padding: 12px 30px; border-radius: 40px; text-decoration: none; font-weight: bold;">Facebook</a>
+    <a href="https://www.instagram.com/deb_douassanho" target="_blank" style="background: #E1306C; color: white; padding: 12px 30px; border-radius: 40px; text-decoration: none; font-weight: bold;">Instagram</a>
+    <a href="https://youtube.com/@debdouassanho" target="_blank" style="background: #FF0000; color: white; padding: 12px 30px; border-radius: 40px; text-decoration: none; font-weight: bold;">YouTube</a>
+  </div>
+</section>
+
   </main>
 
   <footer>
@@ -260,19 +233,14 @@
     }, { threshold: 0.2 });
     document.querySelectorAll('section').forEach(section => observer.observe(section));
 
-    let index = 1;
+    let index = 0;
     const track = document.getElementById('carouselTrack');
     const imgs = track.children;
     const total = imgs.length;
 
     function updateCarousel() {
-      for (let i = 0; i < total; i++) {
-        imgs[i].style.opacity = '0.4';
-        imgs[i].style.transform = 'scale(0.8)';
-      }
-      imgs[index].style.opacity = '1';
-      imgs[index].style.transform = 'scale(1)';
-      track.style.transform = `translateX(-${index * 100}%)`;
+      const offset = index * (imgs[0].clientWidth + 20);
+      track.style.transform = `translateX(-${offset}px)`;
     }
 
     function moveSlide(step) {
@@ -280,9 +248,10 @@
       updateCarousel();
     }
 
-    window.addEventListener('DOMContentLoaded', updateCarousel);
+    window.addEventListener('DOMContentLoaded', () => {
+      updateCarousel();
+      window.addEventListener('resize', updateCarousel);
+    });
   </script>
 </body>
 </html>
-
-
